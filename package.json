@@ -1,0 +1,9 @@
+{
+  "name": "graphics",
+  "version": "1.0.0",
+  "description": "A monorepo for html based graphics",
+  "main": "index.js",
+  "repository": "git@github.com:NaSTAuk/graphics.git",
+  "author": "benjaminkay93 <ben.kay01@hotmail.co.uk>",
+  "license": "MIT"
+}
