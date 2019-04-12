@@ -12,3 +12,7 @@ A repository for HTML based, TV Graphics
 3. Install dependancies using:
 `yarn`
 4. Profit...
+
+## Community
+
+Join the discussion via nasta-hq.slack.com in #graphics (our Slack channel)
