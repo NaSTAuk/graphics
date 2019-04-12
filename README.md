@@ -15,4 +15,4 @@ A repository for HTML based, TV Graphics
 
 ## Community
 
-Join the discussion via nasta-hq.slack.com in #graphics (our Slack channel)
+Join the discussion via [nasta-hq.slack.com](http://nasta-hq.slack.com) in #graphics (our Slack channel)
