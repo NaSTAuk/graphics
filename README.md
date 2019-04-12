@@ -1,5 +1,7 @@
 # Graphics
 
+[![NaSTA-uk/graphics](https://img.shields.io/badge/slack-@NaSTAhq/graphics-yellow.svg?logo=slack)](https://nasta-hq.slack.com/messages/CHGJDNE02)
+
 A repository for HTML based, TV Graphics
 
 ## Development
