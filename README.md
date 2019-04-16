@@ -26,7 +26,6 @@ It is formed of the following structure:
 
 ```
 .
-├── _config.yml
 ├── packages
 |   ├── atomics
 |   |   ├── atoms
@@ -39,5 +38,9 @@ It is formed of the following structure:
 |   └── framework
 |       ├── core
 |       └── admin
-└── package.json
+├── .gitignore
+├── LICENSE
+├── package.json
+├── README.md
+└── yarn.lock
 ```
