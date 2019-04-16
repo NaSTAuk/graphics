@@ -18,3 +18,26 @@ A repository for HTML based, TV Graphics
 ## Community
 
 Join the discussion via [nasta-hq.slack.com](http://nasta-hq.slack.com) in #graphics (our Slack channel)
+
+## Structure
+
+This repoisitory acts as a monorepo built upon [yarn workspaces](https://yarnpkg.com/lang/en/docs/workspaces/).
+It is formed of the following structure:
+
+```
+.
+├── _config.yml
+├── packages
+|   ├── atomics
+|   |   ├── atoms
+|   |   ├── molecules
+|   |   ├── organisms
+|   |   ├── templates
+|   |   └── pages
+|   ├── components
+|   |   └── lowerThirds
+|   └── framework
+|       ├── core
+|       └── admin
+└── package.json
+```
