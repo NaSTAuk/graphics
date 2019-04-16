@@ -1,6 +1,6 @@
 # Glossary
 
-This file is full of useful explanations to what and how we refare to things.
+This file is full of useful explanations to what and how we refer to things.
 
 ## Contents
 
@@ -18,7 +18,7 @@ This file is full of useful explanations to what and how we refare to things.
 ## Users
 
 People who do not necessarilly develop this package, but rather use it as part
-of their broadcast/
+of their broadcast.
 
 ## Component
 
@@ -27,7 +27,7 @@ admin component and a cg component.
 
 ### Admin Component
 
-An admin component is the thing that allows you to control how the cg component
+An Admin Component is the thing that allows you to control how the cg component
 is used.
 
 ### CG Component
@@ -37,13 +37,13 @@ graphics machine.
 
 ## Frameworks
 
-Frameworks are things that the users do not necessarilly need to understand how
+Frameworks are things that the users do not necessarily need to understand how
 things work and the mechanisms involved.
 
 ### Admin Panel
 
 The mechanism for displaying admin components to users. They use this screen to
-controll all components.
+control all components.
 
 ### CG Panel
 
