@@ -12,8 +12,11 @@
   ],
   "devDependencies": {
     "@ts-tools/build": "^0.1.10",
+    "@types/jest": "^24.0.11",
     "@types/node": "^11.13.7",
+    "jest": "^24.7.1",
     "lerna": "^3.13.4",
+    "ts-jest": "^24.0.2",
     "tslint": "^5.16.0",
     "tslint-react": "^4.0.0",
     "typescript": "^3.4.5"
@@ -21,8 +24,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --stream --parallel",
-    "test": "lerna run test --stream --parallel",
-    "lint": "tslint -p tsconfig.test.json",
+    "test": "yarn test:lint && yarn test:coverage",
+    "test:lint": "tslint -p tsconfig.test.json",
+    "test:coverage": "jest --coverage",
     "clean": "git clean -xfd",
     "start": "yarn workspace @nastauk/graphics-core start"
   }
