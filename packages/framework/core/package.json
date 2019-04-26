@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "repository": "git@github.com:NaSTAuk/graphics.git",
+  "author": "NaSTAuk <contact@nasta.tv>",
+  "license": "MIT",
   "dependencies": {
     "@nastauk/graphics-logger": "*"
   },
