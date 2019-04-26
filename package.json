@@ -1,6 +1,6 @@
 {
   "name": "@nastauk/graphics",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A monorepo for html based graphics",
   "main": "index.js",
   "repository": "git@github.com:NaSTAuk/graphics.git",

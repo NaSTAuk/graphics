@@ -1,6 +1,6 @@
 {
   "name": "@nastauk/graphics-logger",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "cjs/index.js",
   "typings": "cjs/index.d.ts",
   "repository": "git@github.com:NaSTAuk/graphics.git",
