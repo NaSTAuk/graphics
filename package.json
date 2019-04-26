@@ -11,12 +11,17 @@
     "packages/*/*"
   ],
   "devDependencies": {
-    "lerna": "^3.13.4"
+    "@types/node": "^11.13.7",
+    "lerna": "^3.13.4",
+    "tslint": "^5.16.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.4.5"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build",
-    "test": "lerna run test",
+    "build": "lerna run build --stream --parallel",
+    "test": "lerna run test --stream --parallel",
+    "lint": "tslint -p tsconfig.test.json",
     "clean": "git clean -xfd"
   }
 }

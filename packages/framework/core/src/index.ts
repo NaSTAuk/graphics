@@ -1,5 +1,5 @@
 import { error, log, warn } from '@nastauk/graphics-logger'
 
-error('error');
-log('log');
-warn('warn');
+logError('error')
+logInfo('log')
+logWarn('warn')

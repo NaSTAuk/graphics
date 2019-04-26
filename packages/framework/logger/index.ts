@@ -1,1 +1,0 @@
-export { error, log, warn } from './src/index'
