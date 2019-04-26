@@ -10,10 +10,12 @@
   "workspaces": [
     "packages/*/*"
   ],
-  "devDependencies": {},
+  "devDependencies": {
+    "lerna": "^3.13.4"
+  },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "tsc -b packages/*",
+    "build": "lerna run build",
     "test": "lerna run test",
     "clean": "git clean -xfd"
   }
