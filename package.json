@@ -23,6 +23,7 @@
     "build": "lerna run build --stream --parallel",
     "test": "lerna run test --stream --parallel",
     "lint": "tslint -p tsconfig.test.json",
-    "clean": "git clean -xfd"
+    "clean": "git clean -xfd",
+    "start": "yarn workspace @nastauk/graphics-core start"
   }
 }
