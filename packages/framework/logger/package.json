@@ -1,13 +1,17 @@
 {
   "name": "@nastauk/graphics-logger",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "cjs/index.js",
+  "typings": "cjs/index.d.ts",
   "repository": "git@github.com:NaSTAuk/graphics.git",
   "author": "NaSTAuk <contact@nasta.tv>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "ts-build ./src --cjs",
     "test": "echo \"No tests here.\" "
-  }
+  },
+  "files": [
+    "src",
+    "!src/tsconfig.json"
+  ]
 }

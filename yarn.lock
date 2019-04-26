@@ -697,6 +697,21 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
+"@ts-tools/build@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@ts-tools/build/-/build-0.1.10.tgz#d8cb34f994e201c31a2d98307bc84cb1b709ea6a"
+  integrity sha512-C3G+vQpws8GrUy9mEmGJ46fUZHH8R3tkv9a7UMech2Vlb+ZGt38WPb8noGt2RMEHvUUiibKzPxl5jgUBSM0YTw==
+  dependencies:
+    "@ts-tools/service" "^2.0.0"
+    chalk "^2.4.2"
+    commander "^2.19.0"
+    proper-fs "^1.1.2"
+
+"@ts-tools/service@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ts-tools/service/-/service-2.0.0.tgz#61e7d45fdfa9b0f080bdd8a01ad7249b8cc0d1e2"
+  integrity sha512-gcpwqbODwZvbNSvzCFygjwq31WhmAiD6WMfs6nuknaGDnZFktjxq+PPegCTKDCKvEAgDjgvIe4dB8en+221Ytw==
+
 "@types/node@^11.13.7":
   version "11.13.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.7.tgz#85dbb71c510442d00c0631f99dae957ce44fd104"
@@ -1190,7 +1205,7 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@^2.12.1, commander@~2.20.0:
+commander@^2.12.1, commander@^2.19.0, commander@~2.20.0:
   version "2.20.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
@@ -3489,6 +3504,11 @@ promzard@^0.3.0:
   integrity sha1-JqXW7ox97kyxIggwWs+5O6OCqe4=
   dependencies:
     read "1"
+
+proper-fs@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/proper-fs/-/proper-fs-1.1.2.tgz#f2e76615f16f6d12a7f4612504b091cee4196dd1"
+  integrity sha512-0XLDXc0JVz8WYtMLDy5vi0GHAFuM9rzaQWaCMJ7+CWmxOaFNfkdVWqyuxbgb70slQm3Ji12z1oHophyradDN4Q==
 
 proto-list@~1.2.1:
   version "1.2.4"

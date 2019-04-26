@@ -1,4 +1,4 @@
-import { error, log, warn } from '@nastauk/graphics-logger'
+import { logError, logInfo, logWarn } from '@nastauk/graphics-logger'
 
 logError('error')
 logInfo('log')
