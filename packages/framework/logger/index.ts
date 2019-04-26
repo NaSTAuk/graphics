@@ -1,1 +1,1 @@
-export * from './src/index'
+export { error, log, warn } from './src/index'

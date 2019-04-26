@@ -4,7 +4,7 @@ const warn = (value: string) => console.warn(value)
 
 const error = (error: string) => console.error(error)
 
-export default {
+export {
   error,
   log,
   warn
