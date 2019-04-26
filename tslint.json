@@ -19,7 +19,7 @@
             "jsx-double"
         ],
         "semicolon": [true, "never"],
-        "trailing-comma": false,
+        "trailing-comma": true,
         "variable-name": [
             true,
             "allow-leading-underscore",
