@@ -5,7 +5,7 @@ module.exports = {
     'packages/framework/**/*.{ts,tsx}',
   ],
   coveragePathIgnorePatterns: ['/node_modules/', '/docs/', '/packages/*/*/cjs/'],
-  coverageReporters: ['html', 'text', 'json'],
+  coverageReporters: ['html', 'text', 'json', 'lcov'],
   coverageThreshold: {
     global: {
       branches: 100,
