@@ -14,7 +14,6 @@
     "@ts-tools/build": "^0.1.10",
     "@types/jest": "^24.0.11",
     "@types/node": "^11.13.7",
-    "coveralls": "^3.0.3",
     "jest": "^24.7.1",
     "lerna": "^3.13.4",
     "ts-jest": "^24.0.2",
@@ -24,12 +23,12 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build --stream --parallel",
+    "build": "lerna run build --stream",
     "test": "yarn test:lint && yarn test:coverage",
     "test:lint": "tslint -p tsconfig.test.json",
     "test:coverage": "jest --coverage",
     "clean": "git clean -xfd",
     "start": "yarn workspace @nastauk/graphics-core start",
-    "ci:coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
+    "ci:coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   }
 }
