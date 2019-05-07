@@ -1,4 +1,4 @@
-import {logError, logInfo, logWarn} from '../src'
+import index from '../src'
 
 describe('server', () => {
     it('works', () => {
@@ -12,9 +12,7 @@ test('should wrap console', () => {
     console.info = jest.fn()
     console.warn = jest.fn()
 
-    logError('error')
-    logInfo('info')
-    logWarn('warn')
+    index()
 
     expect(console.error).toHaveBeenCalledTimes(1)
     expect(console.error).toHaveBeenCalledWith('error')
