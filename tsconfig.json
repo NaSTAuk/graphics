@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
     "noEmit": true,
     "strict": true,
     "strictNullChecks": true,
