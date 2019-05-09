@@ -41,9 +41,10 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build --stream",
+    "build": "lerna run build --stream --parallel",
     "build:typedefs": "lerna run build:typedefs --stream",
-    "postbuild": "yarn build:typedefs && tsc",
+    "prebuild": "tsc",
+    "postbuild": "yarn build:typedefs",
     "test": "yarn test:lint && yarn test:coverage",
     "test:lint": "run-p -c test:lint:*",
     "test:lint:ts": "tslint 'packages/**/*.ts{,x}'",
