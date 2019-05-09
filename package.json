@@ -50,7 +50,6 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "prebuild": "run-p test",
     "build": "lerna run build --stream --parallel",
     "build:typedefs": "lerna run build:typedefs --stream",
     "postbuild": "yarn build:typedefs",
