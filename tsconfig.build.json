@@ -3,8 +3,9 @@
   "compilerOptions": {
     "noEmit": false,
     "emitDeclarationOnly": true,
-    "declaration": true
+    "declaration": true,
+    "declarationMap": true,
   },
   "include": [],
-  "exclude": ["**/*.story.*", "**/*.test.*", "dist"]
+  "exclude": ["**/*.story.*", "**/*.test.*", "dist"],
 }
