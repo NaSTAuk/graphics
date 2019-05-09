@@ -2,7 +2,8 @@ module.exports = {
   clearMocks: true,
   collectCoverageFrom: [
     '!**/cjf/**',
-    'packages/framework/**/*.{ts,tsx}',
+    '!packages/**/cjs/*.{ts,tsx}',
+    'packages/**/*.{ts,tsx}',
   ],
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: ['/node_modules/', '/docs/', '/packages/*/*/cjs/'],
