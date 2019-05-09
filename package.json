@@ -52,7 +52,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "build": "run-p build:*",
     "build:dist": "lerna run build --stream --parallel",
-    "build:typedefs": "lerna run build:typedefs --stream",
+    "build:typedefs": "lerna run build:typedefs --stream --parallel",
     "test": "run-p test:tsc test:lint test:coverage",
     "test:lint": "run-p -c test:lint:*",
     "test:lint:ts": "tslint 'packages/**/*.ts{,x}'",
