@@ -49,18 +49,19 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "prebuild": "run-p test",
     "build": "lerna run build --stream --parallel",
     "build:typedefs": "lerna run build:typedefs --stream",
-    "prebuild": "tsc",
     "postbuild": "yarn build:typedefs",
-    "test": "yarn test:lint && yarn test:coverage",
+    "test": "run-p test:tsc test:lint test:coverage",
     "test:lint": "run-p -c test:lint:*",
     "test:lint:ts": "tslint 'packages/**/*.ts{,x}'",
-    "fix": "yarn test:lint:ts --fix",
     "test:lint:css": "stylelint 'packages/**/*.ts{,x}'",
     "test:coverage": "jest --coverage",
+    "test:tsc": "tsc",
+    "fix": "yarn test:lint:ts --fix",
     "clean": "git clean -xfd",
-    "start": "yarn workspace @nastauk/graphics-core start",
-    "ci:coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "start": "yarn workspace @nastauk/graphics-core start"
   }
 }

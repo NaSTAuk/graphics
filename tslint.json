@@ -23,6 +23,7 @@
         "indent": [true, "spaces", 2],
         "object-literal-sort-keys": false,
         "ordered-imports": false,
+        "no-implicit-dependencies": true,
         "semicolon": [true, "never"],
         "trailing-comma": true,
         "variable-name": [
