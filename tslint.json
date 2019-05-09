@@ -1,11 +1,21 @@
 {
     "defaultSeverity": "error",
     "extends": [
-        "tslint:recommended",
-        "tslint-react"
+        "tslint:latest",
+        "tslint-react",
+        "tslint-plugin-prettier",
+        "tslint-config-prettier"
     ],
     "jsRules": {},
     "rules": {
+        "prettier": true,
+        "quotemark": [
+          true,
+          "single",
+          "avoid-escape",
+          "avoid-template",
+          "jsx-double"
+        ],
         "arrow-parens": [
             true,
             "ban-single-arg-parens"
@@ -13,11 +23,6 @@
         "indent": [true, "spaces", 2],
         "object-literal-sort-keys": false,
         "ordered-imports": false,
-        "quotemark": [
-            true,
-            "single",
-            "jsx-double"
-        ],
         "semicolon": [true, "never"],
         "trailing-comma": true,
         "variable-name": [
