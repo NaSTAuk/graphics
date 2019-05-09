@@ -15,7 +15,7 @@ module.exports = {
     }
   },
   moduleFileExtensions: ['ts', 'tsx', 'js'],
-  setupFilesAfterEnv: ['<rootDir>packages/jest/setupTests.ts'],
+  setupFilesAfterEnv: ['<rootDir>testing/jest/setupTests.ts'],
   testRegex: '\\.test\\.ts?$',
   watchPathIgnorePatterns: ['/node_modules/', '/docs/', '/packages/*/*/dist/'],
 }
