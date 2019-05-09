@@ -42,6 +42,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --stream",
+    "build:declarations": "lerna exec 'tsc --project ./tsconfig.build.json'",
+    "postbuild": "yarn build:declarations",
     "test": "yarn test:lint && yarn test:coverage",
     "test:lint": "run-p -c test:lint:*",
     "test:lint:ts": "tslint 'packages/**/*.ts{,x}'",
