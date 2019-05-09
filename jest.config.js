@@ -14,6 +14,9 @@ module.exports = {
       statements: 100
     }
   },
+  moduleNameMapper: {
+    '@nastauk/graphics-(.+)$': '<rootDir>packages/core/$1/src',
+  },
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   setupFilesAfterEnv: ['<rootDir>testing/jest/setupTests.ts'],
   snapshotSerializers: ['enzyme-to-json/serializer'],

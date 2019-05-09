@@ -10,11 +10,11 @@
     "rules": {
         "prettier": true,
         "quotemark": [
-          true,
-          "single",
-          "avoid-escape",
-          "avoid-template",
-          "jsx-double"
+            true,
+            "single",
+            "avoid-escape",
+            "avoid-template",
+            "jsx-double"
         ],
         "arrow-parens": [
             true,
@@ -34,6 +34,6 @@
     },
     "rulesDirectory": [],
     "linterOptions": {
-      "exclude": ["**/*.d.ts"]
+        "exclude": ["**/*.d.ts"]
     }
 }
