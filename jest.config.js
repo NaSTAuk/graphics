@@ -4,6 +4,7 @@ module.exports = {
     '!**/cjf/**',
     'packages/framework/**/*.{ts,tsx}',
   ],
+  coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: ['/node_modules/', '/docs/', '/packages/*/*/cjs/'],
   coverageReporters: ['html', 'text', 'json', 'lcov'],
   coverageThreshold: {
@@ -14,13 +15,23 @@ module.exports = {
       statements: 100
     }
   },
-  watchPathIgnorePatterns: ['/node_modules/', '/docs/', '/packages/*/*/cjs/'],
-  "roots": [
-    "./packages",
+  globals: {
+    'ts-jest': {
+      extends: './babel.config.js',
+    },
+  },
+  moduleFileExtensions: ['ts', 'tsx', 'js'],
+  notify: true,
+  notifyMode: 'always',
+  roots: [
+    './packages',
   ],
-  "transform": {
-    "^.+\\.ts$": "ts-jest",
+  transform: {
+    '^.+\\.ts$': 'ts-jest',
   },
   testRegex: '\\.test\\.ts?$',
-  "moduleFileExtensions": [ "ts", "js" ],
+  transform: {
+    '^.+\\.(ts|tsx)$': 'ts-jest',
+  },
+  watchPathIgnorePatterns: ['/node_modules/', '/docs/', '/packages/*/*/cjs/'],
 }
