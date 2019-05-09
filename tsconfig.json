@@ -23,6 +23,7 @@
     "rootDir": "./",
     "baseUrl": "./",
     "paths": {
+      "@nastauk/*": ["packages/core/*/src"],
       "*": ["node_modules", "packages"]
     },
     "lib": [

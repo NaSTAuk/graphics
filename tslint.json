@@ -31,5 +31,8 @@
             "allow-pascal-case"
         ]
     },
-    "rulesDirectory": []
+    "rulesDirectory": [],
+    "linterOptions": {
+      "exclude": ["**/*.d.ts"]
+    }
 }
