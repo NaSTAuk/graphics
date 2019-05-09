@@ -10,7 +10,7 @@
     "rootDir": "./",
     "baseUrl": "./",
     "paths": {
-      "@nastauk/graphics-*": ["packages/core/*/src"],
+      "@nastauk/graphics-*": ["packages/core/*/src"], // e.g. * matches with logger, so "@nastauk/graphics-logger": ["packages/core/logger/src"]
       "*": ["node_modules", "packages"]
     },
     "strictNullChecks": true,
