@@ -16,6 +16,7 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   setupFilesAfterEnv: ['<rootDir>testing/jest/setupTests.ts'],
+  snapshotSerializers: ['enzyme-to-json/serializer'],
   testRegex: '\\.test\\.ts?$',
   watchPathIgnorePatterns: ['/node_modules/', '/docs/', '/packages/*/*/dist/'],
 }
