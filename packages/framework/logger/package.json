@@ -1,8 +1,8 @@
 {
   "name": "@nastauk/graphics-logger",
   "version": "0.0.1",
-  "main": "cjs/index.js",
-  "typings": "cjs/index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "repository": "git@github.com:NaSTAuk/graphics.git",
   "author": "NaSTAuk <contact@nasta.tv>",
   "license": "MIT",
