@@ -8,6 +8,6 @@ cache: yarn
 install:
   yarn
 script:
-  - yarn test
   - yarn build
+  - yarn test
   - yarn coveralls
