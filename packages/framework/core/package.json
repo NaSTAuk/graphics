@@ -10,8 +10,7 @@
     "@nastauk/graphics-logger": "*"
   },
   "scripts": {
-    "build": "ts-build ./src --cjs",
     "test": "echo \"No tests here.\"",
-    "start": "node cjs/"
+    "start": "node dist/"
   }
 }
