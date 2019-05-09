@@ -11,9 +11,14 @@
     "packages/*/*"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
     "@ts-tools/build": "^0.1.10",
     "@types/jest": "^24.0.11",
-    "@types/node": "^11.13.7",
+    "@types/node": "^12.0.0",
     "coveralls": "^3.0.3",
     "jest": "^24.7.1",
     "lerna": "^3.13.4",
@@ -24,12 +29,13 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build --stream",
+    "build": "lerna exec --parallel 'BABEL_ENV=build babel --root-mode upward src --out-dir dist --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments'",
     "test": "yarn test:lint && yarn test:coverage",
     "test:lint": "tslint -p tsconfig.test.json",
     "test:coverage": "jest --coverage",
     "clean": "git clean -xfd",
     "start": "yarn workspace @nastauk/graphics-core start",
-    "ci:coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "ci:coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "prebuild": "tsc"
   }
 }
