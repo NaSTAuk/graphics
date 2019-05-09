@@ -1,0 +1,20 @@
+{
+    "name": "@nastauk/graphics-testing-jest",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "repository": "git@github.com:NaSTAuk/graphics.git",
+    "author": "NaSTAuk <contact@nasta.tv>",
+    "license": "MIT",
+    "dependencies": {
+      "enzyme": "*",
+      "enzyme-adapter-react-16": "*"
+    },
+    "scripts": {
+      "build": "BABEL_ENV=build babel --root-mode upward src --out-dir dist --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments",
+      "build:typedefs": "tsc --project ./tsconfig.build.json",
+      "test": "echo \"No tests here.\"",
+      "start": "node dist/"
+    }
+  }
+  
