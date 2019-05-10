@@ -24,10 +24,7 @@ const presets = [
     },
   ],
   [
-    '@babel/preset-react',
-    {
-      development: process.env.BABEL_ENV !== 'build',
-    },
+    '@babel/preset-react'
   ],
   '@babel/preset-typescript',
 ]
