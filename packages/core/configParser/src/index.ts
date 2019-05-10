@@ -1,9 +1,20 @@
-import { logError, logInfo, logWarn } from '@nastauk/graphics-logger'
-
-const log = () => {
-  logError('error')
-  logInfo('info')
-  logWarn('warn')
+interface Config {
+  components: string[]
 }
 
-export default log
+const parser = (config: Config) => {
+  let admin:string[] = []
+  let client:string[] = []
+
+  config.components.forEach((component: string) => {
+    client.push(component)
+    admin.push(component)
+  })
+
+  return {
+    admin,
+    client
+  }
+}
+
+export { parser }
