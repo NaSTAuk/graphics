@@ -10,3 +10,4 @@ script:
   - yarn test
   - yarn build
   - yarn coveralls
+  - exit 0
