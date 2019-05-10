@@ -1,10 +1,10 @@
-interface Config {
+interface IConfig {
   components: string[]
 }
 
-const parser = (config: Config) => {
-  let admin:string[] = []
-  let client:string[] = []
+const parser = (config: IConfig) => {
+  const admin: string[] = []
+  const client: string[] = []
 
   config.components.forEach((component: string) => {
     client.push(component)
@@ -13,7 +13,7 @@ const parser = (config: Config) => {
 
   return {
     admin,
-    client
+    client,
   }
 }
 
