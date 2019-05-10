@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "strict": true,
+    "jsx": "react",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@nastauk/graphics-*": ["packages/core/*/src"], // e.g. * matches with logger, so "@nastauk/graphics-logger": ["packages/core/logger/src"]
+      "*": ["node_modules", "packages"]
+    },
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "newLine": "LF",
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "include": ["packages"],
+  "exclude": ["node_modules"]
+}
