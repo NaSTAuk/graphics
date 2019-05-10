@@ -1,13 +1,13 @@
 import { parser } from '../src'
 
-test('can read in components', () => {
+test('can split components into admin and client', () => {
   const mockConfig = {
-    components: ['@nastauk/graphics-component-lower-third'],
+    components: ['somePackageName'],
   }
 
   const expected = {
-    client: ['@nastauk/graphics-component-lower-third'],
-    admin: ['@nastauk/graphics-component-lower-third'],
+    client: ['somePackageName'],
+    admin: ['somePackageName'],
   }
 
   expect(parser(mockConfig)).toEqual(expected)
