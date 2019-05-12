@@ -36,7 +36,7 @@ graphics machine.
 
 ## Frameworks
 
-Frameworks are things that the users do not necessarily need to understand, but 
+Frameworks are things that the users do not necessarily need to understand, but
 control how things work and the mechanisms involved.
 
 ### Admin Panel
