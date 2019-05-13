@@ -17,39 +17,38 @@ This file is full of useful explanations to what and how we refer to things.
 
 ## Users
 
-People who do not necessarilly develop this package, but rather use it as part
+People who do not necessarily develop this package, but rather use it as part
 of their broadcast.
 
 ## Component
 
-A component is something that is used by users consisting of 2 subparts, an
-admin component and a cg component.
+A Component is something that is used by users and consists of 2 subparts; an
+Admin Component and a CG Component.
 
 ### Admin Component
 
-An Admin Component is the thing that allows you to control how the cg component
-is used.
+An Admin Component controls a CG Component by e.g. updating text/ score values.
 
 ### CG Component
 
-A CG Component is the view that is used on the output for consumption by a
+A CG Component is the view that is generated for consumption by a
 graphics machine.
 
 ## Frameworks
 
-Frameworks are things that the users do not necessarily need to understand how
-things work and the mechanisms involved.
+Frameworks are things that the users do not necessarily need to understand, but
+control how things work and the mechanisms involved.
 
 ### Admin Panel
 
-The mechanism for displaying admin components to users. They use this screen to
+The mechanism for displaying Admin Components to users. They use this screen to
 control all components.
 
 ### CG Panel
 
 The webpage that is consumed inside the broadcast chain. This will display
-things like the lower thirds and then the users just have to point their
-graphics engine, like CasparCG to this webpage.
+things like the lower thirds. Users then just have to point their
+graphics engine, like CasparCG, to this webpage.
 
 ### Core
 
