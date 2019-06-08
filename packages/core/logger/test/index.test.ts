@@ -1,4 +1,4 @@
-import { logError, logInfo, logWarn, } from '../src'
+import { logError, logInfo, logWarn } from '../src'
 
 describe('server', () => {
   it('works', () => {

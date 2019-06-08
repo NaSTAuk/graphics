@@ -4,4 +4,4 @@ import serializer from 'jest-emotion'
 
 expect.addSnapshotSerializer(serializer)
 
-Enzyme.configure({ adapter: new Adapter(), })
+Enzyme.configure({ adapter: new Adapter() })

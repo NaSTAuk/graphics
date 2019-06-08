@@ -6,4 +6,4 @@ const logInfo = (value: string) => console.info(value)
 const logWarn = (value: string) => console.warn(value)
 /* tslint:disable:no-console */
 
-export { logError, logInfo, logWarn, }
+export { logError, logInfo, logWarn }

@@ -17,4 +17,4 @@ const parser = (config: Config) => {
   }
 }
 
-export { parser, }
+export { parser }

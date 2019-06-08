@@ -6,7 +6,7 @@ module.exports = {
       "project": "./tsconfig.json"
   },
   rules: {
-    'comma-dangle': ["error", "always"]
+    'comma-dangle': ["error", "only-multiline"]
   }
 }
 
