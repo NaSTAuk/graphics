@@ -1,12 +1,13 @@
 os:
   - linux
   - osx
+  - windows
 language: node_js
 node_js:
   - 'lts/*'
-cache: yarn
 install: yarn
 script:
   - yarn test
   - yarn build
   - yarn coveralls
+  - exit 0
