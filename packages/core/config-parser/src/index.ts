@@ -1,4 +1,4 @@
-interface Config {
+type Config = {
   components: string[]
 }
 
