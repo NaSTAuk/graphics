@@ -1,8 +1,8 @@
-interface IConfig {
+type Config = {
   components: string[]
 }
 
-const parser = (config: IConfig) => {
+const parser = (config: Config) => {
   const admin: string[] = []
   const client: string[] = []
 
