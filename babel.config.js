@@ -11,7 +11,7 @@ const env = {
   },
 }
 
-const ignore = ['node_modules' ]
+const ignore = [ 'node_modules' ]
 
 const presets = [
   [

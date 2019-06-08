@@ -4,8 +4,8 @@ module.exports = {
     '!packages/**/dist/*.{ts,tsx}',
     'packages/**/*.{ts,tsx}',
   ],
-  coveragePathIgnorePatterns: ['/node_modules/', '/docs/', '/packages/*/*/dist/' ],
-  coverageReporters: ['html', 'text', 'json', 'lcov' ],
+  coveragePathIgnorePatterns: [ '/node_modules/', '/docs/', '/packages/*/*/dist/' ],
+  coverageReporters: [ 'html', 'text', 'json', 'lcov' ],
   coverageThreshold: {
     global: {
       branches: 100,
@@ -17,9 +17,9 @@ module.exports = {
   moduleNameMapper: {
     '@nastauk/graphics-(.+)$': '<rootDir>packages/core/$1/src',
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js' ],
-  setupFilesAfterEnv: ['<rootDir>testing/jest/setupTests.ts' ],
-  snapshotSerializers: ['enzyme-to-json/serializer' ],
+  moduleFileExtensions: [ 'ts', 'tsx', 'js' ],
+  setupFilesAfterEnv: [ '<rootDir>testing/jest/setupTests.ts' ],
+  snapshotSerializers: [ 'enzyme-to-json/serializer' ],
   testRegex: '\\.test\\.ts?$',
-  watchPathIgnorePatterns: ['/node_modules/', '/docs/', '/packages/*/*/dist/' ],
+  watchPathIgnorePatterns: [ '/node_modules/', '/docs/', '/packages/*/*/dist/' ],
 }
