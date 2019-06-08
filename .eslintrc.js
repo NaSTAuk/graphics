@@ -7,8 +7,8 @@ module.exports = {
   },
   rules: {
     'comma-dangle': ['error', 'only-multiline'],
-    '@typescript-eslint/interface-name-prefix': 0,
-    '@typescript-eslint/explicit-function-return-type': 0,
-  }
+    '@typescript-eslint/prefer-interface': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+  },
 }
 
