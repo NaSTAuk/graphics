@@ -1,4 +1,4 @@
-type Config = {
+interface Config {
   components: string[]
 }
 
@@ -17,4 +17,4 @@ const parser = (config: Config) => {
   }
 }
 
-export { parser }
+export { parser, }
