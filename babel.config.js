@@ -1,17 +1,17 @@
 const env = {
-    build: {
-        ignore: [
-            '**/*.test.tsx',
-            '**/*.test.ts',
-            '**/*.story.tsx',
-            '__snapshots__',
-            '__tests__',
-            '__stories__',
-        ],
-    },
+  build: {
+    ignore: [
+      '**/*.test.tsx',
+      '**/*.test.ts',
+      '**/*.story.tsx',
+      '__snapshots__',
+      '__tests__',
+      '__stories__',
+    ],
+  },
 }
 
-const ignore = ['node_modules']
+const ignore = [ 'node_modules' ]
 
 const presets = [
   [
@@ -23,23 +23,18 @@ const presets = [
       },
     },
   ],
-  [
-    '@babel/preset-react',
-    {
-      development: process.env.BABEL_ENV !== 'build',
-    },
-  ],
+  '@babel/preset-react',
   '@babel/preset-typescript',
 ]
 
 const config = (api) => {
-    api.cache(true)
-    
-    return {
-        env,
-        ignore,
-        presets,
-    }
+  api.cache(true)
+
+  return {
+    env,
+    ignore,
+    presets,
+  }
 }
 
 module.exports = config
