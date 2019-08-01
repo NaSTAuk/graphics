@@ -61,7 +61,7 @@
     "build:typedefs": "lerna run build:typedefs --stream",
     "test": "run-p test:tsc test:lint test:coverage",
     "test:lint": "run-p -c test:lint:*",
-    "test:lint:ts": "eslint --ext .js,.ts,.tsx ./",
+    "test:lint:ts": "eslint -f codeframe --ext .js,.ts,.tsx ./",
     "test:lint:css": "stylelint \"packages/**/*.ts{,x}\"",
     "test:lint:md": "markdownlint ./docs/ ./packages/ ./testing/ ./*.md",
     "test:coverage": "jest --coverage",
